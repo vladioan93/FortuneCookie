@@ -1,3 +1,5 @@
+package Bags;
+
 import surprize.ISurprise;
 
 public interface IBag {
