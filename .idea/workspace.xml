@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c59d049a-7ecd-4fac-b115-9b9c800c948c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/IBag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/IBagFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/FIFOBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/FIFOBag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/IBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/IBag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/LIFOBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/LIFOBag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/RandomBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Bags/RandomBag.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/surprize/FortuneCookie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/surprize/FortuneCookie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/surprize/ISurprise.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2_Hierarchy-Ex/surprize/ISurprise.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IBag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IBagFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bags/IBagFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bags/FIFOBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bags/FIFOBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bags/IBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bags/IBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bags/IBagFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bags/IBagFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bags/LIFOBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bags/LIFOBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bags/RandomBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bags/RandomBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GatherSurprises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GatherSurprises.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/surprize/FortuneCookie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/surprize/FortuneCookie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/surprize/ISurprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/surprize/ISurprise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,9 +76,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="229" width="395" height="580" key="#com.intellij.ide.util.MemberChooser" timestamp="1587300228203">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="266" y="181" width="387" height="460" key="#com.intellij.ide.util.MemberChooser" timestamp="1587409843620">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="266" y="181" width="387" height="460" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587409843620" />
     <state x="443" y="229" width="395" height="580" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1587300228203" />
     <state x="498" y="259" width="374" height="587" key="#com.intellij.ide.util.MemberChooser/67.27.2493.1053@67.27.2493.1053" timestamp="1585921172320" />
     <state x="480" y="412" width="366" height="214" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587291973310">
@@ -95,24 +95,28 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="307" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1587300019372" />
-    <state width="1222" height="299" key="GridCell.Tab.0.bottom" timestamp="1587306492614">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1481" height="257" key="GridCell.Tab.0.bottom" timestamp="1587410199862">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1481" height="257" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587410199862" />
     <state width="1222" height="299" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1587306492614" />
     <state width="1201" height="255" key="GridCell.Tab.0.bottom/67.27.2493.1053@67.27.2493.1053" timestamp="1585921401744" />
-    <state width="1222" height="299" key="GridCell.Tab.0.center" timestamp="1587306492614">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1481" height="257" key="GridCell.Tab.0.center" timestamp="1587410199862">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1481" height="257" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587410199862" />
     <state width="1222" height="299" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1587306492614" />
     <state width="1201" height="255" key="GridCell.Tab.0.center/67.27.2493.1053@67.27.2493.1053" timestamp="1585921401743" />
-    <state width="1222" height="299" key="GridCell.Tab.0.left" timestamp="1587306492614">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1481" height="257" key="GridCell.Tab.0.left" timestamp="1587410199862">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1481" height="257" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587410199862" />
     <state width="1222" height="299" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1587306492614" />
     <state width="1201" height="255" key="GridCell.Tab.0.left/67.27.2493.1053@67.27.2493.1053" timestamp="1585921401743" />
-    <state width="1222" height="299" key="GridCell.Tab.0.right" timestamp="1587306492614">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1481" height="257" key="GridCell.Tab.0.right" timestamp="1587410199862">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1481" height="257" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587410199862" />
     <state width="1222" height="299" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1587306492614" />
     <state width="1201" height="255" key="GridCell.Tab.0.right/67.27.2493.1053@67.27.2493.1053" timestamp="1585921401743" />
     <state x="144" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1587391719186">
@@ -123,5 +127,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="322" y="73" key="refactoring.ChangeSignatureDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1587301344811" />
+    <state x="-37" y="-2" width="840" height="1034" key="search.everywhere.popup" timestamp="1587396248942">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-37" y="-2" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587396248942" />
   </component>
 </project>

@@ -39,4 +39,9 @@ public class LIFOBag implements IBag {
     public int size() {
         return bag.size();
     }
+
+    @Override
+    public ISurprise get(int n) {
+        return bag.get(n);
+    }
 }

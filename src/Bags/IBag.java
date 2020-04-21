@@ -19,4 +19,15 @@ public interface IBag {
 
     // Returns the number of surprises
     int size();
+
+    static void show(IBag bag){
+        System.out.println("This bag contains: ");
+        for (int i = 0; i < bag.size(); i++) {
+            System.out.print("\t\n(" + (i + 1) + ") ");
+            bag.get(i).enjoy();
+            System.out.println();
+        }
+    };
+
+    ISurprise get(int n);
 }

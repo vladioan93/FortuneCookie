@@ -1,7 +1,6 @@
 package Bags;
 
 import surprize.ISurprise;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +10,7 @@ public class FIFOBag implements IBag {
 
     @Override
     public void put(ISurprise newSurprise) {
-        bag.add(0, newSurprise);
+        bag.add(newSurprise);
     }
 
     @Override
@@ -38,5 +37,11 @@ public class FIFOBag implements IBag {
     @Override
     public int size() {
         return bag.size();
+    }
+
+
+    @Override
+    public ISurprise get(int n) {
+        return bag.get(n);
     }
 }

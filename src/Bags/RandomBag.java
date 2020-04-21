@@ -1,6 +1,7 @@
 package Bags;
 
 import surprize.ISurprise;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -18,14 +19,14 @@ public class RandomBag implements IBag {
 
     @Override
     public void put(IBag bagOfSurprises) {
-        while(!bagOfSurprises.isEmpty()){
+        while (!bagOfSurprises.isEmpty()) {
             put(bagOfSurprises.takeOut());
         }
     }
 
     @Override
     public ISurprise takeOut() {
-        if(bag.isEmpty())
+        if (bag.isEmpty())
             return null;
         int nr = random.nextInt(bag.size());
         ISurprise copyOfSurprise = bag.get(nr);
@@ -41,5 +42,10 @@ public class RandomBag implements IBag {
     @Override
     public int size() {
         return bag.size();
+    }
+
+    @Override
+    public ISurprise get(int n) {
+        return bag.get(n);
     }
 }
