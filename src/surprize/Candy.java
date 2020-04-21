@@ -23,4 +23,9 @@ public class Candy implements ISurprise {
         numberOfCandies = random.nextInt(50);
         candyType = type.get(random.nextInt(type.size()));
     }
+
+    @Override
+    public void show() {
+        System.out.print("Candies");
+    }
 }

@@ -15,16 +15,22 @@ public final class GatherSurprises {
     public static ISurprise gather() {
         ISurprise surprise;
         int nr = random.nextInt(3);
+
         switch (nr) {
             case 0:
                 surprise = new FortuneCookie();
+                surprise.generate();
+                return surprise;
             case 1:
                 surprise = new Candy();
-            default:
+                surprise.generate();
+                return surprise;
+            case 2:
                 surprise = new MinionToy();
+                surprise.generate();
+                return surprise;
         }
-        surprise.generate();
-        return surprise;
+        return null;
     }
 
     public static ISurprise[] gather(int n) {

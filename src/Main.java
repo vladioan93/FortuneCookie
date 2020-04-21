@@ -43,8 +43,39 @@ public class Main {
         IBag bag1 = bagFactory.makeBag("FIFO");
         IBag bag2 = bagFactory.makeBag("LIFO");
         IBag bag3 = bagFactory.makeBag("RANDOM");
+
+        bag3.put(GatherSurprises.gather());
+        bag3.put(GatherSurprises.gather());
+        bag3.put(GatherSurprises.gather());
+        bag3.put(GatherSurprises.gather());
+        bag3.put(GatherSurprises.gather());
+        bag3.put(GatherSurprises.gather());
+
+        System.out.println("urmeaza primul bag===============");
+        show(bag3);
+
         System.out.println("pana aici e bine");
 
+        bag1.put(bag3);
+        bag1.put(GatherSurprises.gather());
+        bag1.put(GatherSurprises.gather());
+        bag1.put(GatherSurprises.gather());
+        bag1.put(GatherSurprises.gather());
 
+        System.out.println("urmeaza al doilea bag===========");
+
+        show(bag1);
+
+        System.out.println("primul bag ar trebui sa fie gol=======");
+        show(bag3);
+
+        System.out.println("Adaugam din bag 1 in bag 2(din fifo)");
+        bag2.put(bag1);
+        show(bag2);
+        System.out.println("===============================");
+        bag1.put(bag2);
+        show(bag1);
+
+        GiveSurpriseAndApplause giveSurpriseAndApplause = new GiveSurpriseAndApplause(4,"FIFO");
     }
 }

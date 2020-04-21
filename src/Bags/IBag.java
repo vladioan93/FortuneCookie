@@ -24,8 +24,7 @@ public interface IBag {
         System.out.println("This bag contains: ");
         for (int i = 0; i < bag.size(); i++) {
             System.out.print("\t\n(" + (i + 1) + ") ");
-            bag.get(i).enjoy();
-            System.out.println();
+            bag.get(i).show();
         }
     };
 

@@ -43,5 +43,10 @@ public class FortuneCookie implements ISurprise {
         cookieText = fortuneCookieMessages[random.nextInt(20)];
     }
 
+    @Override
+    public void show() {
+        System.out.print("Fortune cookie");
+    }
+
 
 }

@@ -10,12 +10,18 @@ public class MinionToy implements ISurprise {
 
     @Override
     public void enjoy() {
-        System.out.println("You just got a minion toy, and you named it " + minionName);
+        System.out.println("You just got a minion toy!");
+        System.out.println("Name the minion: ");
+        minionName = scanner.nextLine();
     }
 
     @Override
     public void generate() {
-        System.out.println("Name the minion: ");
-        minionName = scanner.nextLine();
+
+    }
+
+    @Override
+    public void show() {
+        System.out.print("Minion toy");
     }
 }
