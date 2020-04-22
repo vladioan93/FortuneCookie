@@ -1,5 +1,5 @@
 public class GiveSurpriseAndApplause extends AbstractGiveSurprises {
-    public GiveSurpriseAndApplause(int waitTime, String bag) {
+    public GiveSurpriseAndApplause(String bag, int waitTime) {
         super(waitTime, bag);
     }
 

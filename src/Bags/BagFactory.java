@@ -1,6 +1,7 @@
 package Bags;
 
 public class BagFactory implements IBagFactory{
+
     @Override
     public IBag makeBag(String type) {
         if (type == null){

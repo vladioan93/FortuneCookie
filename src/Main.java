@@ -54,7 +54,8 @@ public class Main {
         System.out.println("urmeaza primul bag===============");
         show(bag3);
 
-        System.out.println("pana aici e bine");
+
+        GatherSurprises.gather(5);
 
         bag1.put(bag3);
         bag1.put(GatherSurprises.gather());
@@ -76,6 +77,9 @@ public class Main {
         bag1.put(bag2);
         show(bag1);
 
-        GiveSurpriseAndApplause giveSurpriseAndApplause = new GiveSurpriseAndApplause(4,"FIFO");
+        System.out.println("\n\npana aici e bine");
+        GiveSurpriseAndApplause giveSurpriseAndApplause = new GiveSurpriseAndApplause("FIFO", 4);
+
+
     }
 }

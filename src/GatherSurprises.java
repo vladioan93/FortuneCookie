@@ -3,6 +3,7 @@ import surprize.FortuneCookie;
 import surprize.ISurprise;
 import surprize.MinionToy;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public final class GatherSurprises {
@@ -33,10 +34,10 @@ public final class GatherSurprises {
         return null;
     }
 
-    public static ISurprise[] gather(int n) {
-        ISurprise[] iSurprise = new ISurprise[n];
+    public static ArrayList<ISurprise> gather(int n) {
+        ArrayList<ISurprise> iSurprise = new ArrayList<ISurprise>();
         for (int i = 0; i < n; i++) {
-            iSurprise[i] = gather();
+            iSurprise.add(gather());
         }
         return iSurprise;
     }

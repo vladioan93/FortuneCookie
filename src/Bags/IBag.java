@@ -2,6 +2,8 @@ package Bags;
 
 import surprize.ISurprise;
 
+import java.util.ArrayList;
+
 public interface IBag {
 
     // adds a surprise in the bag
@@ -10,6 +12,10 @@ public interface IBag {
     // adds all the surprises from another IBag
     //   -> the 'bagOfSurprises' will be empty() afterwards
     void put(IBag bagOfSurprises);
+
+    default void put(ArrayList<ISurprise> arrayList){
+
+    }
 
     // removes a surprise from the bag and returns it
     ISurprise takeOut();
