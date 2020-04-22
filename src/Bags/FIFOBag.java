@@ -1,6 +1,6 @@
 package Bags;
 
-import surprize.ISurprise;
+import surprises.ISurprise;
 import java.util.ArrayList;
 import java.util.List;
 

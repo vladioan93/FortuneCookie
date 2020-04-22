@@ -1,7 +1,7 @@
-import surprize.Candy;
-import surprize.FortuneCookie;
-import surprize.ISurprise;
-import surprize.MinionToy;
+import surprises.Candy;
+import surprises.FortuneCookie;
+import surprises.ISurprise;
+import surprises.MinionToy;
 
 import java.util.ArrayList;
 import java.util.Random;

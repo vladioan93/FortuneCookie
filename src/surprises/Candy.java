@@ -1,4 +1,4 @@
-package surprize;
+package surprises;
 
 import java.util.ArrayList;
 import java.util.Arrays;

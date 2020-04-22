@@ -1,6 +1,4 @@
-package surprize;
-
-import java.util.Random;
+package surprises;
 
 public interface ISurprise {
 

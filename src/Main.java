@@ -1,8 +1,4 @@
 import Bags.*;
-import surprize.Candy;
-import surprize.FortuneCookie;
-import surprize.ISurprise;
-import surprize.MinionToy;
 
 import static Bags.IBag.show;
 
